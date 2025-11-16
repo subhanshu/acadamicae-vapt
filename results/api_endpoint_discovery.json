@@ -1,0 +1,31 @@
+{
+  "https://aps.academicae.com": {
+    "total_discovered": 0,
+    "endpoints": []
+  },
+  "https://app.hello-teacher.ai": {
+    "total_discovered": 1,
+    "endpoints": [
+      {
+        "path": "/api/ping",
+        "source": "javascript",
+        "file": "https://app.hello-teacher.ai/_next/static/chunks/app/layout-f685c8a260331610.js",
+        "method": "GET",
+        "status_code": 404,
+        "accessible": true,
+        "headers": {
+          "Server": "nginx/1.24.0 (Ubuntu)",
+          "Date": "Sun, 16 Nov 2025 16:28:03 GMT",
+          "Content-Type": "text/html; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding",
+          "link": "</_next/static/media/47cbc4e2adbc5db9-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+          "X-Powered-By": "Next.js",
+          "Content-Encoding": "gzip"
+        }
+      }
+    ]
+  }
+}

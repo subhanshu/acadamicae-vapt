@@ -1,0 +1,858 @@
+{
+  "metadata": {
+    "assessment_date": "2025-11-16T16:29:37.369221",
+    "assessment_type": "Automated VAPT",
+    "total_findings": 25,
+    "severity_breakdown": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 19,
+      "Low": 6,
+      "Informational": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "VAPT-0001",
+      "title": "Missing Security Header: Content-Security-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Content-Security-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include Content-Security-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Content-Security-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0002",
+      "title": "Missing Security Header: Strict-Transport-Security",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Strict-Transport-Security security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include Strict-Transport-Security header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Strict-Transport-Security header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0003",
+      "title": "Missing Security Header: X-Frame-Options",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the X-Frame-Options security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include X-Frame-Options header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the X-Frame-Options header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0004",
+      "title": "Missing Security Header: X-Content-Type-Options",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the X-Content-Type-Options security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include X-Content-Type-Options header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the X-Content-Type-Options header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0005",
+      "title": "Missing Security Header: Referrer-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Referrer-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include Referrer-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Referrer-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0006",
+      "title": "Missing Security Header: Permissions-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Permissions-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com does not include Permissions-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Permissions-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0007",
+      "title": "Missing Security Header: Content-Security-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Content-Security-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include Content-Security-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Content-Security-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0008",
+      "title": "Missing Security Header: Strict-Transport-Security",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Strict-Transport-Security security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include Strict-Transport-Security header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Strict-Transport-Security header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0009",
+      "title": "Missing Security Header: X-Frame-Options",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the X-Frame-Options security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include X-Frame-Options header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the X-Frame-Options header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0010",
+      "title": "Missing Security Header: X-Content-Type-Options",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the X-Content-Type-Options security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include X-Content-Type-Options header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the X-Content-Type-Options header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0011",
+      "title": "Missing Security Header: Referrer-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Referrer-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include Referrer-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Referrer-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0012",
+      "title": "Missing Security Header: Permissions-Policy",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-693",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The application is missing the Permissions-Policy security header, which helps protect against various attacks.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai does not include Permissions-Policy header.",
+      "impact": "Missing security headers can lead to clickjacking, XSS, MIME type confusion, and other attacks.",
+      "remediation": "Add the Permissions-Policy header to all HTTP responses. Configure in web server (nginx/Apache) or application framework.",
+      "references": [
+        "https://owasp.org/www-project-secure-headers/",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+      ]
+    },
+    {
+      "id": "VAPT-0013",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://aps.academicae.com/search",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com/search. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0014",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://aps.academicae.com/api/search",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com/api/search. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0015",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://aps.academicae.com/comment",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com/comment. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0016",
+      "title": "Information Disclosure",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-209",
+      "owasp": "A01:2021 - Broken Access Control",
+      "description": "Stack trace or error information exposed",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com. Error details found in response",
+      "impact": "Information disclosure can help attackers understand the application structure and identify attack vectors.",
+      "remediation": "Remove or sanitize information disclosure in error messages and headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0017",
+      "title": "Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A01:2021 - Broken Access Control",
+      "description": "Server version information disclosed",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com. ",
+      "impact": "Information disclosure can help attackers understand the application structure and identify attack vectors.",
+      "remediation": "Remove or sanitize information disclosure in error messages and headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0018",
+      "title": "Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A01:2021 - Broken Access Control",
+      "description": "Technology stack information disclosed",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "Vulnerability detected at https://aps.academicae.com. ",
+      "impact": "Information disclosure can help attackers understand the application structure and identify attack vectors.",
+      "remediation": "Remove or sanitize information disclosure in error messages and headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0019",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://app.hello-teacher.ai/search",
+      "proof_of_concept": "Vulnerability detected at https://app.hello-teacher.ai/search. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0020",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://app.hello-teacher.ai/api/search",
+      "proof_of_concept": "Vulnerability detected at https://app.hello-teacher.ai/api/search. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0021",
+      "title": "Reflected XSS",
+      "severity": "Medium",
+      "cvss_score": 5.3,
+      "cwe": "CWE-79",
+      "owasp": "A03:2021 - Injection",
+      "description": "Payload reflected in response",
+      "affected_component": "https://app.hello-teacher.ai/comment",
+      "proof_of_concept": "Vulnerability detected at https://app.hello-teacher.ai/comment. Payload reflected in response",
+      "impact": "XSS vulnerabilities can allow attackers to steal user credentials, session tokens, or perform actions on behalf of users.",
+      "remediation": "Implement proper input validation and output encoding. Use Content Security Policy (CSP) headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0022",
+      "title": "Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A01:2021 - Broken Access Control",
+      "description": "Server version information disclosed",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "Vulnerability detected at https://app.hello-teacher.ai. ",
+      "impact": "Information disclosure can help attackers understand the application structure and identify attack vectors.",
+      "remediation": "Remove or sanitize information disclosure in error messages and headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0023",
+      "title": "Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A01:2021 - Broken Access Control",
+      "description": "Technology stack information disclosed",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "Vulnerability detected at https://app.hello-teacher.ai. ",
+      "impact": "Information disclosure can help attackers understand the application structure and identify attack vectors.",
+      "remediation": "Remove or sanitize information disclosure in error messages and headers.",
+      "references": [
+        "https://owasp.org/www-project-top-ten/",
+        "https://cwe.mitre.org/"
+      ]
+    },
+    {
+      "id": "VAPT-0024",
+      "title": "Technology Stack Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The X-Powered-By header reveals 'Next.js' technology stack information.",
+      "affected_component": "https://aps.academicae.com",
+      "proof_of_concept": "HTTP response from https://aps.academicae.com includes X-Powered-By: Next.js",
+      "impact": "Information disclosure can help attackers identify known vulnerabilities in specific technology versions.",
+      "remediation": "Remove or disable the X-Powered-By header in web server or application configuration.",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "id": "VAPT-0025",
+      "title": "Technology Stack Information Disclosure",
+      "severity": "Low",
+      "cvss_score": 3.1,
+      "cwe": "CWE-209",
+      "owasp": "A05:2021 - Security Misconfiguration",
+      "description": "The X-Powered-By header reveals 'Next.js' technology stack information.",
+      "affected_component": "https://app.hello-teacher.ai",
+      "proof_of_concept": "HTTP response from https://app.hello-teacher.ai includes X-Powered-By: Next.js",
+      "impact": "Information disclosure can help attackers identify known vulnerabilities in specific technology versions.",
+      "remediation": "Remove or disable the X-Powered-By header in web server or application configuration.",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    }
+  ],
+  "scan_results": {
+    "technology_stack": {
+      "https://aps.academicae.com": {
+        "url": "https://aps.academicae.com",
+        "server": "nginx/1.24.0 (Ubuntu)",
+        "x_powered_by": "Next.js",
+        "content_type": "text/html; charset=utf-8",
+        "security_headers": {
+          "Content-Security-Policy": "Missing",
+          "Strict-Transport-Security": "Missing",
+          "X-Frame-Options": "Missing",
+          "X-Content-Type-Options": "Missing",
+          "X-XSS-Protection": "Missing",
+          "Referrer-Policy": "Missing",
+          "Permissions-Policy": "Missing"
+        },
+        "detected_technologies": [
+          "Next.js"
+        ]
+      },
+      "https://app.hello-teacher.ai": {
+        "url": "https://app.hello-teacher.ai",
+        "server": "nginx/1.24.0 (Ubuntu)",
+        "x_powered_by": "Next.js",
+        "content_type": "text/html; charset=utf-8",
+        "security_headers": {
+          "Content-Security-Policy": "Missing",
+          "Strict-Transport-Security": "Missing",
+          "X-Frame-Options": "Missing",
+          "X-Content-Type-Options": "Missing",
+          "X-XSS-Protection": "Missing",
+          "Referrer-Policy": "Missing",
+          "Permissions-Policy": "Missing"
+        },
+        "detected_technologies": [
+          "Next.js"
+        ]
+      }
+    },
+    "security_headers": {
+      "https://aps.academicae.com": {
+        "url": "https://aps.academicae.com",
+        "status_code": 200,
+        "headers_present": {},
+        "headers_missing": [
+          "Content-Security-Policy",
+          "Strict-Transport-Security",
+          "X-Frame-Options",
+          "X-Content-Type-Options",
+          "Referrer-Policy",
+          "Permissions-Policy"
+        ],
+        "recommendations": [
+          "Missing required header: Content-Security-Policy - Prevents XSS attacks by controlling resource loading",
+          "Missing required header: Strict-Transport-Security - Forces HTTPS connections",
+          "Missing required header: X-Frame-Options - Prevents clickjacking attacks",
+          "Missing required header: X-Content-Type-Options - Prevents MIME type sniffing",
+          "Missing required header: Referrer-Policy - Controls referrer information",
+          "Missing required header: Permissions-Policy - Controls browser features and APIs",
+          "X-Powered-By header reveals technology stack - remove this header"
+        ],
+        "score": 0,
+        "max_score": 95,
+        "score_percentage": 0.0,
+        "server_info": "nginx/1.24.0 (Ubuntu)",
+        "x_powered_by": "Next.js"
+      },
+      "https://app.hello-teacher.ai": {
+        "url": "https://app.hello-teacher.ai",
+        "status_code": 200,
+        "headers_present": {},
+        "headers_missing": [
+          "Content-Security-Policy",
+          "Strict-Transport-Security",
+          "X-Frame-Options",
+          "X-Content-Type-Options",
+          "Referrer-Policy",
+          "Permissions-Policy"
+        ],
+        "recommendations": [
+          "Missing required header: Content-Security-Policy - Prevents XSS attacks by controlling resource loading",
+          "Missing required header: Strict-Transport-Security - Forces HTTPS connections",
+          "Missing required header: X-Frame-Options - Prevents clickjacking attacks",
+          "Missing required header: X-Content-Type-Options - Prevents MIME type sniffing",
+          "Missing required header: Referrer-Policy - Controls referrer information",
+          "Missing required header: Permissions-Policy - Controls browser features and APIs",
+          "X-Powered-By header reveals technology stack - remove this header"
+        ],
+        "score": 0,
+        "max_score": 95,
+        "score_percentage": 0.0,
+        "server_info": "nginx/1.24.0 (Ubuntu)",
+        "x_powered_by": "Next.js"
+      }
+    },
+    "ssl_tls": {
+      "https://aps.academicae.com": {
+        "url": "https://aps.academicae.com",
+        "hostname": "aps.academicae.com",
+        "port": 443,
+        "certificate_info": {
+          "subject": {
+            "commonName": "aps.academicae.com"
+          },
+          "issuer": {
+            "countryName": "US",
+            "organizationName": "Let's Encrypt",
+            "commonName": "E7"
+          },
+          "version": 3,
+          "serialNumber": "055D5EFAD5167ACB5636751B848DE24D9980",
+          "notBefore": "Nov 14 04:39:53 2025 GMT",
+          "notAfter": "Feb 12 04:39:52 2026 GMT",
+          "subjectAltName": [
+            [
+              "DNS",
+              "api.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "app.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "aps.academicae.com"
+            ],
+            [
+              "DNS",
+              "djis.academicae.com"
+            ],
+            [
+              "DNS",
+              "djis.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "dpsd.academicae.com"
+            ],
+            [
+              "DNS",
+              "geodb.academicae.com"
+            ],
+            [
+              "DNS",
+              "lnr.academicae.com"
+            ],
+            [
+              "DNS",
+              "lnr.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "staging-app.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "staging-aps.academicae.com"
+            ]
+          ]
+        },
+        "protocols_supported": [
+          "TLSv1.3"
+        ],
+        "cipher_suites": [],
+        "vulnerabilities": [],
+        "recommendations": [],
+        "protocol_version": "TLSv1.3",
+        "cipher": [
+          "TLS_AES_256_GCM_SHA384",
+          "TLSv1.3",
+          256
+        ]
+      },
+      "https://app.hello-teacher.ai": {
+        "url": "https://app.hello-teacher.ai",
+        "hostname": "app.hello-teacher.ai",
+        "port": 443,
+        "certificate_info": {
+          "subject": {
+            "commonName": "aps.academicae.com"
+          },
+          "issuer": {
+            "countryName": "US",
+            "organizationName": "Let's Encrypt",
+            "commonName": "E7"
+          },
+          "version": 3,
+          "serialNumber": "055D5EFAD5167ACB5636751B848DE24D9980",
+          "notBefore": "Nov 14 04:39:53 2025 GMT",
+          "notAfter": "Feb 12 04:39:52 2026 GMT",
+          "subjectAltName": [
+            [
+              "DNS",
+              "api.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "app.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "aps.academicae.com"
+            ],
+            [
+              "DNS",
+              "djis.academicae.com"
+            ],
+            [
+              "DNS",
+              "djis.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "dpsd.academicae.com"
+            ],
+            [
+              "DNS",
+              "geodb.academicae.com"
+            ],
+            [
+              "DNS",
+              "lnr.academicae.com"
+            ],
+            [
+              "DNS",
+              "lnr.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "staging-app.hello-teacher.ai"
+            ],
+            [
+              "DNS",
+              "staging-aps.academicae.com"
+            ]
+          ]
+        },
+        "protocols_supported": [
+          "TLSv1.3"
+        ],
+        "cipher_suites": [],
+        "vulnerabilities": [],
+        "recommendations": [],
+        "protocol_version": "TLSv1.3",
+        "cipher": [
+          "TLS_AES_256_GCM_SHA384",
+          "TLSv1.3",
+          256
+        ]
+      }
+    },
+    "infrastructure": {
+      "aps.academicae.com": {
+        "hostname": "aps.academicae.com",
+        "open_ports": [
+          {
+            "port": 80,
+            "status": "open"
+          },
+          {
+            "port": 443,
+            "status": "open"
+          },
+          {
+            "port": 22,
+            "status": "open"
+          }
+        ],
+        "method": "basic_socket_check"
+      },
+      "app.hello-teacher.ai": {
+        "hostname": "app.hello-teacher.ai",
+        "open_ports": [
+          {
+            "port": 80,
+            "status": "open"
+          },
+          {
+            "port": 443,
+            "status": "open"
+          },
+          {
+            "port": 22,
+            "status": "open"
+          }
+        ],
+        "method": "basic_socket_check"
+      }
+    },
+    "api_discovery": {
+      "https://aps.academicae.com": {
+        "total_discovered": 0,
+        "endpoints": []
+      },
+      "https://app.hello-teacher.ai": {
+        "total_discovered": 1,
+        "endpoints": [
+          {
+            "path": "/api/ping",
+            "source": "javascript",
+            "file": "https://app.hello-teacher.ai/_next/static/chunks/app/layout-f685c8a260331610.js",
+            "method": "GET",
+            "status_code": 404,
+            "accessible": true,
+            "headers": {
+              "Server": "nginx/1.24.0 (Ubuntu)",
+              "Date": "Sun, 16 Nov 2025 16:28:03 GMT",
+              "Content-Type": "text/html; charset=utf-8",
+              "Transfer-Encoding": "chunked",
+              "Connection": "keep-alive",
+              "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+              "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding",
+              "link": "</_next/static/media/47cbc4e2adbc5db9-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+              "X-Powered-By": "Next.js",
+              "Content-Encoding": "gzip"
+            }
+          }
+        ]
+      }
+    },
+    "dast": {
+      "https://aps.academicae.com": {
+        "url": "https://aps.academicae.com",
+        "total_findings": 6,
+        "findings": [
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://aps.academicae.com/search",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://aps.academicae.com/api/search",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://aps.academicae.com/comment",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Information Disclosure",
+            "severity": "Medium",
+            "issue": "Stack trace or error information exposed",
+            "evidence": "Error details found in response"
+          },
+          {
+            "type": "Information Disclosure",
+            "severity": "Low",
+            "issue": "Server version information disclosed",
+            "header": "nginx/1.24.0 (Ubuntu)"
+          },
+          {
+            "type": "Information Disclosure",
+            "severity": "Low",
+            "issue": "Technology stack information disclosed",
+            "header": "Next.js"
+          }
+        ],
+        "severity_breakdown": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 4,
+          "Low": 2
+        }
+      },
+      "https://app.hello-teacher.ai": {
+        "url": "https://app.hello-teacher.ai",
+        "total_findings": 5,
+        "findings": [
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://app.hello-teacher.ai/search",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://app.hello-teacher.ai/api/search",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Reflected XSS",
+            "severity": "Medium",
+            "path": "https://app.hello-teacher.ai/comment",
+            "payload": "javascript:alert('XSS')",
+            "evidence": "Payload reflected in response"
+          },
+          {
+            "type": "Information Disclosure",
+            "severity": "Low",
+            "issue": "Server version information disclosed",
+            "header": "nginx/1.24.0 (Ubuntu)"
+          },
+          {
+            "type": "Information Disclosure",
+            "severity": "Low",
+            "issue": "Technology stack information disclosed",
+            "header": "Next.js"
+          }
+        ],
+        "severity_breakdown": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 3,
+          "Low": 2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "https://aps.academicae.com": {
+    "url": "https://aps.academicae.com",
+    "status_code": 200,
+    "headers_present": {},
+    "headers_missing": [
+      "Content-Security-Policy",
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "recommendations": [
+      "Missing required header: Content-Security-Policy - Prevents XSS attacks by controlling resource loading",
+      "Missing required header: Strict-Transport-Security - Forces HTTPS connections",
+      "Missing required header: X-Frame-Options - Prevents clickjacking attacks",
+      "Missing required header: X-Content-Type-Options - Prevents MIME type sniffing",
+      "Missing required header: Referrer-Policy - Controls referrer information",
+      "Missing required header: Permissions-Policy - Controls browser features and APIs",
+      "X-Powered-By header reveals technology stack - remove this header"
+    ],
+    "score": 0,
+    "max_score": 95,
+    "score_percentage": 0.0,
+    "server_info": "nginx/1.24.0 (Ubuntu)",
+    "x_powered_by": "Next.js"
+  },
+  "https://app.hello-teacher.ai": {
+    "url": "https://app.hello-teacher.ai",
+    "status_code": 200,
+    "headers_present": {},
+    "headers_missing": [
+      "Content-Security-Policy",
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "recommendations": [
+      "Missing required header: Content-Security-Policy - Prevents XSS attacks by controlling resource loading",
+      "Missing required header: Strict-Transport-Security - Forces HTTPS connections",
+      "Missing required header: X-Frame-Options - Prevents clickjacking attacks",
+      "Missing required header: X-Content-Type-Options - Prevents MIME type sniffing",
+      "Missing required header: Referrer-Policy - Controls referrer information",
+      "Missing required header: Permissions-Policy - Controls browser features and APIs",
+      "X-Powered-By header reveals technology stack - remove this header"
+    ],
+    "score": 0,
+    "max_score": 95,
+    "score_percentage": 0.0,
+    "server_info": "nginx/1.24.0 (Ubuntu)",
+    "x_powered_by": "Next.js"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "aps.academicae.com": {
+    "hostname": "aps.academicae.com",
+    "open_ports": [
+      {
+        "port": 80,
+        "status": "open"
+      },
+      {
+        "port": 443,
+        "status": "open"
+      },
+      {
+        "port": 22,
+        "status": "open"
+      }
+    ],
+    "method": "basic_socket_check"
+  },
+  "app.hello-teacher.ai": {
+    "hostname": "app.hello-teacher.ai",
+    "open_ports": [
+      {
+        "port": 80,
+        "status": "open"
+      },
+      {
+        "port": 443,
+        "status": "open"
+      },
+      {
+        "port": 22,
+        "status": "open"
+      }
+    ],
+    "method": "basic_socket_check"
+  }
+}

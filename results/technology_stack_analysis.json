@@ -1,0 +1,38 @@
+{
+  "https://aps.academicae.com": {
+    "url": "https://aps.academicae.com",
+    "server": "nginx/1.24.0 (Ubuntu)",
+    "x_powered_by": "Next.js",
+    "content_type": "text/html; charset=utf-8",
+    "security_headers": {
+      "Content-Security-Policy": "Missing",
+      "Strict-Transport-Security": "Missing",
+      "X-Frame-Options": "Missing",
+      "X-Content-Type-Options": "Missing",
+      "X-XSS-Protection": "Missing",
+      "Referrer-Policy": "Missing",
+      "Permissions-Policy": "Missing"
+    },
+    "detected_technologies": [
+      "Next.js"
+    ]
+  },
+  "https://app.hello-teacher.ai": {
+    "url": "https://app.hello-teacher.ai",
+    "server": "nginx/1.24.0 (Ubuntu)",
+    "x_powered_by": "Next.js",
+    "content_type": "text/html; charset=utf-8",
+    "security_headers": {
+      "Content-Security-Policy": "Missing",
+      "Strict-Transport-Security": "Missing",
+      "X-Frame-Options": "Missing",
+      "X-Content-Type-Options": "Missing",
+      "X-XSS-Protection": "Missing",
+      "Referrer-Policy": "Missing",
+      "Permissions-Policy": "Missing"
+    },
+    "detected_technologies": [
+      "Next.js"
+    ]
+  }
+}

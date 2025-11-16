@@ -1,0 +1,156 @@
+{
+  "https://aps.academicae.com": {
+    "url": "https://aps.academicae.com",
+    "hostname": "aps.academicae.com",
+    "port": 443,
+    "certificate_info": {
+      "subject": {
+        "commonName": "aps.academicae.com"
+      },
+      "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "E7"
+      },
+      "version": 3,
+      "serialNumber": "055D5EFAD5167ACB5636751B848DE24D9980",
+      "notBefore": "Nov 14 04:39:53 2025 GMT",
+      "notAfter": "Feb 12 04:39:52 2026 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "api.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "app.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "aps.academicae.com"
+        ],
+        [
+          "DNS",
+          "djis.academicae.com"
+        ],
+        [
+          "DNS",
+          "djis.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "dpsd.academicae.com"
+        ],
+        [
+          "DNS",
+          "geodb.academicae.com"
+        ],
+        [
+          "DNS",
+          "lnr.academicae.com"
+        ],
+        [
+          "DNS",
+          "lnr.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "staging-app.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "staging-aps.academicae.com"
+        ]
+      ]
+    },
+    "protocols_supported": [
+      "TLSv1.3"
+    ],
+    "cipher_suites": [],
+    "vulnerabilities": [],
+    "recommendations": [],
+    "protocol_version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ]
+  },
+  "https://app.hello-teacher.ai": {
+    "url": "https://app.hello-teacher.ai",
+    "hostname": "app.hello-teacher.ai",
+    "port": 443,
+    "certificate_info": {
+      "subject": {
+        "commonName": "aps.academicae.com"
+      },
+      "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "E7"
+      },
+      "version": 3,
+      "serialNumber": "055D5EFAD5167ACB5636751B848DE24D9980",
+      "notBefore": "Nov 14 04:39:53 2025 GMT",
+      "notAfter": "Feb 12 04:39:52 2026 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "api.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "app.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "aps.academicae.com"
+        ],
+        [
+          "DNS",
+          "djis.academicae.com"
+        ],
+        [
+          "DNS",
+          "djis.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "dpsd.academicae.com"
+        ],
+        [
+          "DNS",
+          "geodb.academicae.com"
+        ],
+        [
+          "DNS",
+          "lnr.academicae.com"
+        ],
+        [
+          "DNS",
+          "lnr.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "staging-app.hello-teacher.ai"
+        ],
+        [
+          "DNS",
+          "staging-aps.academicae.com"
+        ]
+      ]
+    },
+    "protocols_supported": [
+      "TLSv1.3"
+    ],
+    "cipher_suites": [],
+    "vulnerabilities": [],
+    "recommendations": [],
+    "protocol_version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ]
+  }
+}
