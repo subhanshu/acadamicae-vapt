@@ -1,0 +1,98 @@
+{
+  "https://aps.academicae.com": {
+    "url": "https://aps.academicae.com",
+    "total_findings": 6,
+    "findings": [
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://aps.academicae.com/search",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://aps.academicae.com/api/search",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://aps.academicae.com/comment",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Information Disclosure",
+        "severity": "Medium",
+        "issue": "Stack trace or error information exposed",
+        "evidence": "Error details found in response"
+      },
+      {
+        "type": "Information Disclosure",
+        "severity": "Low",
+        "issue": "Server version information disclosed",
+        "header": "nginx/1.24.0 (Ubuntu)"
+      },
+      {
+        "type": "Information Disclosure",
+        "severity": "Low",
+        "issue": "Technology stack information disclosed",
+        "header": "Next.js"
+      }
+    ],
+    "severity_breakdown": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 4,
+      "Low": 2
+    }
+  },
+  "https://app.hello-teacher.ai": {
+    "url": "https://app.hello-teacher.ai",
+    "total_findings": 5,
+    "findings": [
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://app.hello-teacher.ai/search",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://app.hello-teacher.ai/api/search",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Reflected XSS",
+        "severity": "Medium",
+        "path": "https://app.hello-teacher.ai/comment",
+        "payload": "javascript:alert('XSS')",
+        "evidence": "Payload reflected in response"
+      },
+      {
+        "type": "Information Disclosure",
+        "severity": "Low",
+        "issue": "Server version information disclosed",
+        "header": "nginx/1.24.0 (Ubuntu)"
+      },
+      {
+        "type": "Information Disclosure",
+        "severity": "Low",
+        "issue": "Technology stack information disclosed",
+        "header": "Next.js"
+      }
+    ],
+    "severity_breakdown": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 3,
+      "Low": 2
+    }
+  }
+}
